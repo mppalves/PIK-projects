@@ -36,10 +36,18 @@ world <- c(
   right = 170,
   top = 80
 )
-germany <- c(
-  left = 5,
-  bottom = 45,
-  right = 20,
-  top = 55
-)
+
 map <- get_stamenmap(world, zoom = 5, maptype = "toner-lite")
+con = c(0,2,4,6,8,10,12,14,16,18,20)
+for (i in con) {
+MapPoints <- ggmap(map) +
+  geom_point(aes(x = lon, y = lat, colour = gCm2_predc), data = df.harvest_predicted[df.harvest_predicted$LSU == i,]) +
+  scale_color_gradientn(colours = c("#ffff00", "#ff3300"),limits = c(0, max(maps[, , 1]))) +
+  ggtitle(paste0("Harvest Predic ", i, " LSU"))
+
+ggsave(paste0("Harvest Predic ", i, " LSU.jpg"),
+       width = 80,
+       height = 64,
+       units = "cm",
+       limitsize = TRUE)
+}
