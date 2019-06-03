@@ -15,4 +15,5 @@
 **/Weather_data_visualization
 *.jpg
 *.pdf
-*obsolete
+*.bin
+*.clm
