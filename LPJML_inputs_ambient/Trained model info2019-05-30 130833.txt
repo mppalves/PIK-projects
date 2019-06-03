@@ -1,0 +1,25 @@
+$`Model Summary`
+function () 
+{
+    model <- keras_model_sequential() %>% layer_dense(units = 1000, 
+        activation = activation, input_shape = dim(train_data)[2]) %>% 
+        layer_dense(units = 500, activation = activation) %>% 
+        layer_dense(units = 200, activation = activation) %>% 
+        layer_dense(units = 100, activation = activation) %>% 
+        layer_dense(units = 1)
+    model %>% compile(loss = loss, optimizer = optimizer, metrics = list("mean_absolute_error"))
+    model
+}
+
+$normalized
+[1] TRUE
+
+$epochs
+[1] 500
+
+$batch_size
+[1] 1000
+
+$loss
+[1] "mse"
+

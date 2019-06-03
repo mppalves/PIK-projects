@@ -1,0 +1,31 @@
+$`t test`
+
+	Two Sample t-test
+
+data:  input_data and output_data
+t = -18.792, df = 134840, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -5.711457 -4.632568
+sample estimates:
+mean of x mean of y 
+ 88.09717  93.26918 
+
+
+$correlation
+[1] 0.7984774
+
+$Variances
+
+	F test to compare two variances
+
+data:  output_data and input_data
+F = 0.96802, num df = 67419, denom df = 67419, p-value = 2.451e-05
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+ 0.9535180 0.9827476
+sample estimates:
+ratio of variances 
+         0.9680225 
+
+
