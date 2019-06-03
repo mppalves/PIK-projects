@@ -9,3 +9,6 @@ Files related to the Master Thesis research on the effects of pasture management
 ### GStools
 
 All functions and files presented in "File bundles" were aggruped in the R package [GSTools](https://github.com/mppalves/GSTools) for better management.
+
+### Author
+Marcos Alves [mppalves@gmail.com](mppalves@f=gmail.com)
