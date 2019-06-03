@@ -1,9 +1,7 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-.jpg
-.pdf
+*.Rproj.user
+*.Rhistory
+*.RData
+*.Ruserdata
 **./Climate_change_images
 **./Clustering_study
 **./Formulas
@@ -15,3 +13,5 @@
 **./Presentation
 **./Readings
 **./Weather_data_visualization
+*.jpg
+*.pdf
